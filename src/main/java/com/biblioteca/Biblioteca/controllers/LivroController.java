@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class LivroController {
 
     @PostMapping
-    public void cadastrar(@RequestBody String json){
+    public void cadastrar(@RequestBody DadosCadastroLivros dados){
 
-        System.out.println(json);
+        System.out.println(dados);
 
     }
 }
